@@ -1,0 +1,238 @@
+/* 
+All custom CSS
+*/
+body{
+  background-color: white !important;
+}
+
+  
+  .box-wrap{
+    margin-top: 5%;
+    transition: .5s;
+    font-weight: bold;
+    font-size: larger;
+    margin-left: -30px;
+
+  }
+  
+  h1 {
+    font-weight: normal;
+  }
+  
+  .wrapper li {
+    display: inline-block;
+    font-size: 100%;
+    list-style-type: none;
+    padding: .5em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    display: block;
+    font-size: 100%;
+
+  }
+
+  body {
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* header styling*/
+  
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    margin-top: -1.3%;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 1%;
+
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 1%;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+   
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+
+
+  /* Pre-register styling */ 
+  .jumbotron {
+    background: #358CCE;
+    color: #FFF;
+    border-radius: 0px;
+    }
+    .jumbotron-sm { padding-top: 24px;
+    padding-bottom: 24px; }
+    .jumbotron small {
+    color: #FFF;
+    }
+    .h1 small {
+    font-size: 24px;
+    }
+
+
+
+    /* Header styling*/
+.page-header { 
+  background: url(images/header-img.png)no-repeat; 
+  position: relative; 
+  background-size: cover; 
+  padding-bottom: 10%;
+}
+.page-header .container{
+ text-align: center;
+
+}
+.page-caption { 
+  padding-top: 170px; 
+  padding-bottom: 144px; 
+  text-align: center;
+  color: white;
+}
+.page-title {
+   line-height: 1; 
+   color: #fff; 
+   font-weight: 600; 
+   text-align: center; 
+   padding-top: 160px; 
+   margin-top: -110px;
+  }
+
+.card-section { 
+  position: relative; 
+  bottom: 60px; 
+}
+.card-block { 
+  padding: 50px;
+  box-shadow: 1px 3px 10px grey;
+}
+.section-title { 
+  margin-bottom: 60px; 
+}
+
+/* News and announcements styling*/
+
